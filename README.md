@@ -19,7 +19,7 @@ Screenshots
 ## Install
 
 ```bash
-git submodule add https://github.com/isaksolheim/cyberspace themes/cuberspace
+git submodule add https://github.com/isaksolheim/cyberspace themes/cyberspace
 ```
 
 Open `config.toml`, change `theme` to `"cyberspace"`:
