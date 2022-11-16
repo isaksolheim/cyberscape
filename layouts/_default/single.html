@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<div class="flex max-w-4xl m-auto h-full relative flex-row">
+  {{ partial "nav.html" . }}
+  <main
+    class="w-full h-full bg-white border-4 border-gray-200 p-4 overflow-x-auto markdown"
+  >
+    {{ .Content }}
+
+    <p>
+      <a href="/"> >> Home</a>
+    </p>
+  </main>
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+<div class="content-wrapper bg-blue-50">
+  {{if not .IsHome }}
+  <h1>{{ .Title | markdownify }}</h1>
+  {{ end }} {{ .Content }}
+
+  <ul class="posts-list">
+    {{ $pages := .Pages }} {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{
+    end }} {{ range (where $pages "Type" "post") }}
+    <li>
+      <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+      <a href="{{ .RelPermalink }}">{{ .Title | markdownify }} //</a>
+      {{ if .Summary }}
+      <span class="summary"
+        >{{ $summarySplits := split .Content "<!--start-summary-->" }} {{ if ge
+        (len $summarySplits) 2 }}
+        <!-- If content has the comment "start-summary", start there -->
+        {{ index $summarySplits 1 | plainify | truncate 160 }} {{ else }} {{
+        .Summary| markdownify | truncate 270 " [...]" }} {{ end }}</span
+      >
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ partial "footer.html" . }}
