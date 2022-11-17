@@ -1,8 +1,5 @@
-    <footer class="max-w-4xl m-auto bg-white border-4 border-gray-200 text-center mb-16">
-      {{ partial "foot_custom.html" . }}
-      {{ with .Site.Params.footer }}
-      {{ . | markdownify }}
-      {{ end }}
-    </footer>
-  </body>
-</html>
+<footer
+  class="max-w-4xl m-auto bg-white border-4 border-pink-400 border-double text-center mb-16"
+>
+  {{ .Site.Title }}
+</footer>
