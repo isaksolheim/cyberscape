@@ -1,10 +1,7 @@
-{{ partial "header.html" . }}
-
 <div class="content-wrapper bg-blue-50">
   {{if not .IsHome }}
   <h1>{{ .Title | markdownify }}</h1>
   {{ end }} {{ .Content }}
-
   <ul class="posts-list">
     {{ $pages := .Pages }} {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{
     end }} {{ range (where $pages "Type" "post") }}
@@ -24,4 +21,3 @@
     {{ end }}
   </ul>
 </div>
-{{ partial "footer.html" . }}

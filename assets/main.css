@@ -1,3 +1,169 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#header {
+  animation: animate-background linear 10s infinite;
+}
+
+@keyframes animate-background {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 300px 0px;
+  }
+}
+
+.margin {
+  position: absolute;
+  box-sizing: border-box;
+  width: 26%;
+}
+
+.left.margin {
+  left: -28%;
+  padding-right: 10px;
+  text-align: right;
+
+  border-right: 2px solid black;
+}
+
+.left.margin > p {
+  margin: 0px;
+  margin-top: 4px;
+  line-height: 1rem;
+  font-size: 0.9rem;
+}
+
+.right.margin > p {
+  margin: 0px;
+  margin-top: 4px;
+  line-height: 1rem;
+  font-size: 0.9rem;
+}
+
+.right.margin {
+  right: -28%;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  margin-left: 4px;
+  border-left: 3px outset black;
+  border-bottom: 3px outset black;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.margin,
+.margin.left,
+.margin.right {
+  position: relative;
+  display: block;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.margin.left {
+  text-align: left;
+  float: left;
+  border: 0;
+}
+
+.margin.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .content-wrapper {
+    margin: 1em 0 2rem;
+    padding-top: 0.5rem;
+    min-width: auto;
+  }
+
+  .margin {
+    width: 40%;
+  }
+
+  .margin.left {
+    padding-right: 16px;
+  }
+
+  .margin.right {
+    padding-left: 16px;
+  }
+}
+
+.markdown {
+  color: #333;
+}
+
+.markdown > h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.markdown > h2 {
+  font-size: 18px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.markdown > h3 {
+  font-weight: bold;
+}
+
+.markdown > p {
+  margin-bottom: 8px;
+  color: black;
+}
+
+p > a {
+  color: blue;
+}
+
+p > a:hover {
+  color: white;
+  background-color: blue;
+}
+
+h3 > a {
+  color: blue;
+}
+
+h3 > a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.posts-list-animated {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(12, minmax(300px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+
+.posts-list-animated > li {
+  height: 100px;
+  background-color: blue;
+  animation: moving 20s infinite linear;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-450px, 0);
+  }
+  100% {
+    transform: translate(-900px, 0);
+  }
+}

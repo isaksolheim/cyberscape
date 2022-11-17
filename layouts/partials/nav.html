@@ -1,20 +1,12 @@
-<nav class="border-4 bg-white border-gray-200 p-4 max-w-xs max-h-full">
+<nav class="border-4 bg-white border-pink-400 p-4 max-w-xs max-h-full">
   <ul>
     {{ $title := lower .Title }} {{ $section := lower .Section }}
-    <li class="pull-left {{ if .IsHome }}current{{ end }}">
+    <li>
       <a href="{{ .Site.BaseURL }}">~/home</a>
     </li>
     {{ range .Site.Menus.main }} {{ $name := lower .Name }}
-    <li
-      class="pull-left {{ if eq $name $title }}current{{ else if eq $section $name }}current{{ else if eq $title (pluralize $name) }}current{{ end }}"
-    >
-      <a href="{{ .URL }}" class="font-['JF Jungle Rock']"
-        >~/{{ lower .Name }}</a
-      >
-    </li>
-    {{end}} {{ range .Site.Menus.feed }} {{ $name := lower .Name}}
-    <li class="pull-right">
-      <a href="{{ .URL }}">~/{{ lower .Name}}</a>
+    <li>
+      <a href="{{ .URL }}">~/{{ lower .Name }}</a>
     </li>
     {{end}}
   </ul>

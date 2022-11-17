@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" class="bg-[url('/images/skylo.gif')]">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/images/site.webmanifest" />
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"
-    />
-    {{ $styles := resources.Get "style.css" }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-    {{ partial "head_custom.html" . }}
-  </head>
-
-  <body
-    class="bg-[url('/images/skylo.gif')] max-w-[100vw] overflow-x-hidden"
-  ></body>
-</html>
+<header>
+  <a href="/">
+    <figure
+      id="header"
+      class="max-w-4xl h-20 bg-[url('/images/moltentext.gif')] border-4 border-pink-400 mt-16 m-auto"
+    ></figure>
+  </a>
+</header>
