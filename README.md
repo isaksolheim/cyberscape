@@ -1,4 +1,4 @@
-# Cryberspace
+# Dreamscape
 
 Under development 🚧
 
@@ -19,13 +19,13 @@ Screenshots
 ## Install
 
 ```bash
-git submodule add https://github.com/isaksolheim/cyberspace themes/cyberspace
+git submodule add https://github.com/isaksolheim/dreamscape themes/dreamscape
 ```
 
-Open `config.toml`, change `theme` to `"cyberspace"`:
+Open `config.toml`, change `theme` to `"dreamscape"`:
 
 ```toml
-theme = "cyberspace"
+theme = "dreamscape"
 ```
 
 ## Options
