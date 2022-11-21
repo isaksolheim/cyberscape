@@ -5,7 +5,7 @@
     class="bg-[url('/images/skylo.gif')] max-w-[100vw] overflow-x-hidden font-serif"
   >
     {{- partial "header.html" . -}}
-    <div class="flex max-w-4xl m-auto relative">
+    <div class="flex flex-col lg:flex-row max-w-4xl mx-4 lg:m-auto relative">
       {{ partial "nav.html" . }} {{- block "main" . }} {{- end }}
     </div>
     {{- partial "footer.html" . -}}
