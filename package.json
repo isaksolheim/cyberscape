@@ -1,8 +1,8 @@
 {
-  "name": "dreamscape",
+  "name": "cyberscape",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:isaksolheim/dreamscape.git",
+  "repository": "git@github.com:isaksolheim/cyberscape.git",
   "author": "isaksolheim <mail@isaks.io>",
   "license": "MIT",
   "scripts": {

@@ -1,10 +1,10 @@
-# Dreamscape
+# cyberscape
 
 Under development 🚧
 
 ---
 
-Y2K Hugo theme for humans on the internet 🌐
+A lively and fun Hugo theme for creating personal websites on the internet 🌐
 
 ---
 
@@ -19,14 +19,16 @@ Screenshots
 ## Install
 
 ```bash
-git submodule add https://github.com/isaksolheim/dreamscape themes/dreamscape
+git submodule add https://github.com/isaksolheim/cyberscape themes/cyberscape
 ```
 
-Open `config.toml`, change `theme` to `"dreamscape"`:
+Open `config.toml`, change `theme` to `"cyberscape"`:
 
 ```toml
-theme = "dreamscape"
+theme = "cyberscape"
 ```
+
+# A note on Tailwind
 
 ## Options
 
