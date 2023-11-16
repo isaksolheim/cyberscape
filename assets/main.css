@@ -124,11 +124,11 @@
   color: black;
 }
 
-p > a {
+a {
   color: blue;
 }
 
-p > a:hover {
+a:hover {
   color: white;
   background-color: blue;
 }

@@ -3,10 +3,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {{ $styles := resources.Get "style.css" }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-  <link
-    rel="icon"
-    href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/globe-with-meridians_1f310.png"
-  />
   {{ $title := print .Site.Title " | " .Title }} {{ if .IsHome }}{{ $title =
   .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
