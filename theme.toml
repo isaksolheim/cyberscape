@@ -1,10 +1,10 @@
 name = "cyberscape"
 license = "MIT"
 licenselink = "https://github.com/isaksolheim/cyberscape/blob/main/LICENSE"
-description = "A lively and fun Hugo theme for creating personal websites on the internet 🌐"
+description = "A lively and fun Hugo theme for creating personal websites 🌐"
 homepage = "https://github.com/isaksolheim/cyberscape"
 tags = ["personal", "responsive", "tailwind", "blog", "light"]
-features = []
+features = ["markdown", "tailwind"]
 min_version = "0.41.0"
 
 [author]
