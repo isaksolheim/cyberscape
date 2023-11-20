@@ -527,8 +527,7 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
+.mb-6 {
   margin-bottom: 1.5rem;
 }
 
@@ -538,6 +537,18 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -572,8 +583,8 @@ video {
   max-width: 56rem;
 }
 
-.list-disc {
-  list-style-type: disc;
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col {
@@ -635,6 +646,10 @@ video {
   background-image: url('/images/aquagalaxy.gif');
 }
 
+.bg-\[url\(\'\/images\/water\.webp\'\)\] {
+  background-image: url('/images/water.webp');
+}
+
 .bg-\[url\(\'\/images\/cyberscape\.gif\'\)\] {
   background-image: url('/images/cyberscape.gif');
 }
@@ -643,8 +658,8 @@ video {
   padding: 1rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
+.p-16 {
+  padding: 4rem;
 }
 
 .text-center {
@@ -664,13 +679,14 @@ video {
   font-weight: 700;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 #header {
@@ -841,17 +857,39 @@ h3 > a:hover {
   }
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-red-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[url\(\'\/images\/water\.webp\'\)\]:hover {
+  background-image: url('/images/water.webp');
+}
+
+.hover\:bg-\[url\(\'\/images\/bgskulls\.jpg\'\)\]:hover {
+  background-image: url('/images/bgskulls.jpg');
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:m-auto {
     margin: auto;
   }
 
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .lg\:mb-16 {
     margin-bottom: 4rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:w-auto {
