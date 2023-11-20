@@ -1,10 +1,6 @@
 # Cyberscape
 
-Under development 🚧
-
----
-
-A lively and fun Hugo theme for creating personal websites on the internet 🌐
+A lively and fun Hugo theme for creating personal websites 🌐
 
 ## Links
 
@@ -16,15 +12,14 @@ Cyberscape is designed to be a vibrant and engaging theme, perfect for those who
 
 ### Screenshots
 
-(Insert screenshots here)
+![Screenshot](https://github.com/isaksolheim/cyberscape/blob/main/images/screenshot.png)
 
 ## Install
 
 To get started with Cyberscape, use the following command:
 
 ```
-git submodule add https://github.com/isaksolheim/cyberscape
-themes/cyberscape
+git submodule add https://github.com/isaksolheim/cyberscape themes/cyberscape
 ```
 
 Then, open `config.toml` and change the `theme` to `"cyberscape"`:
@@ -42,6 +37,21 @@ npm run watch
 ```
 
 This command will compile your Tailwind CSS as you make changes, keeping your development process smooth and streamlined.
+
+The `tailwind.config.js` comes configured like the following:
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["content/**/*.md", "layouts/**/*.html", "../../content/**/*.md"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+If you wish to write Tailwind in any additional directories, add their relative path from the config file to the `content` field.
 
 ## Options
 
