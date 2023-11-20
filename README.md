@@ -4,8 +4,6 @@ A lively and fun Hugo theme for creating personal websites 🌐
 
 ![Screenshot](https://raw.githubusercontent.com/isaksolheim/cyberscape/main/images/screenshot.jpg)
 
-💻 [Demo site](https://isaksolheim.github.io/cyberspace/)
-
 🔨 [Demo site repo](https://github.com/isaksolheim/cyberspace)
 
 ## Overview
