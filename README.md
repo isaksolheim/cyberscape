@@ -2,7 +2,11 @@
 
 A lively and fun Hugo theme for creating personal websites 🌐
 
-![Screenshot](https://github.com/isaksolheim/cyberscape/blob/main/images/screenshot.jpg)
+![Screenshot](https://raw.githubusercontent.com/isaksolheim/cyberscape/main/images/screenshot.jpg)
+
+[💻 Demo site](https://isaksolheim.github.io/cyberspace/)
+
+[🔨 Demo site repo](https://github.com/isaksolheim/cyberspace)
 
 ## Overview
 
@@ -16,10 +20,20 @@ To get started with Cyberscape, use the following command:
 git submodule add https://github.com/isaksolheim/cyberscape themes/cyberscape
 ```
 
-Then, open `config.toml` and change the `theme` to `"cyberscape"`:
+Then, open `hugo.toml` and change the `theme` to `"cyberscape"`:
 
 ```
 theme = "cyberscape"
+
+# Enable this for tailwind in markdown files
+[markup.goldmark.renderer]
+unsafe=true
+
+# Add menu links to things from /content/ here (eg. markdown.md)
+[[menu.main]]
+name = "markdown"
+url = "/markdown/"
+weight = 1
 ```
 
 Navigate to the themes directory and install dependencies:
