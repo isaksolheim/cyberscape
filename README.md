@@ -51,14 +51,10 @@ module.exports = {
 
 If you wish to write Tailwind in any additional directories, add their relative path from the config file to the `content` field.
 
-## Options
+## Contributing
 
-(Customization options and instructions)
+Feel free to contribute!
 
 ## License
 
-(Your chosen license)
-
----
-
-Feel free to contribute to Cyberscape's development and make it even more fun and engaging for everyone!
+[MIT](https://github.com/isaksolheim/cyberscape/blob/main/LICENSE)
