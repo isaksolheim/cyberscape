@@ -22,6 +22,13 @@ Then, open `config.toml` and change the `theme` to `"cyberscape"`:
 theme = "cyberscape"
 ```
 
+Navigate to the themes directory and install dependencies:
+
+```
+cd themes/cyberscape
+npm i
+```
+
 ## A Note on Tailwind
 
 Cyberscape uses Tailwind CSS for styling. To ensure styles are up to date during development, run the following command from the themes directory:
