@@ -2,6 +2,8 @@
 
 A lively and fun Hugo theme for creating personal websites 🌐
 
+![Screenshot](https://github.com/isaksolheim/cyberscape/blob/main/images/screenshot.jpg)
+
 ## Links
 
 - Hugo themes: [themes.gohugo.io](https://themes.gohugo.io/)
@@ -9,10 +11,6 @@ A lively and fun Hugo theme for creating personal websites 🌐
 ## Overview
 
 Cyberscape is designed to be a vibrant and engaging theme, perfect for those who enjoy the process of building personal websites.
-
-### Screenshots
-
-![Screenshot](https://github.com/isaksolheim/cyberscape/blob/main/images/screenshot.png)
 
 ## Install
 
