@@ -20,7 +20,7 @@ To get started with Cyberscape, use the following command:
 git submodule add https://github.com/isaksolheim/cyberscape themes/cyberscape
 ```
 
-Then, open `hugo.toml` and change the `theme` to `"cyberscape"`:
+Then, open `config.toml` and add the following:
 
 ```
 theme = "cyberscape"
